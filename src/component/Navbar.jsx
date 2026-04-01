@@ -52,7 +52,7 @@ const search = (event)=>{
   
 }
 
-// 로컬스토리지 저장
+//로컬스토리지 저장
 useEffect(()=>{
  const login =  localStorage.getItem("login")
  if(login === "true"){

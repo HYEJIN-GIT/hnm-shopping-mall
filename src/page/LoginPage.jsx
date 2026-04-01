@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form,Button,Container } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
+import { replace, useNavigate } from 'react-router-dom'
 
 
 const LoginPage = ({setAuthenticate}) => {
@@ -9,7 +9,7 @@ const LoginPage = ({setAuthenticate}) => {
     event.preventDefault()
     setAuthenticate(true)
     localStorage.setItem("login","true")
-    navigate('/')
+    navigate('/',{ replace: true })
     
     
     }

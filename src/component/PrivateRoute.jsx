@@ -6,7 +6,7 @@ const PrivateRoute = ({authenticate}) => {
     
   return (
     
-        authenticate === true ? <ProductDetail></ProductDetail> : <Navigate to ="/login"></Navigate>
+        authenticate === true ? <ProductDetail></ProductDetail> : <Navigate to ="/login" replace={true}></Navigate>
     
   )
 }
