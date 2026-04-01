@@ -24,14 +24,15 @@ const navigate = useNavigate()
 // 로그인
 const goToLogin = ()=>{
 navigate('/login')
-localStorage.setItem("login","true")
+
 }
 
 // 로그아웃
 const goToLogout = ()=>{
   setAuthenticate(false)
-  navigate('/')
   localStorage.removeItem("login")
+  navigate('/')
+ 
 
 }
 

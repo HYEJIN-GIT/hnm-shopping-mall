@@ -8,6 +8,7 @@ const LoginPage = ({setAuthenticate}) => {
   const loginUser = (event)=>{
     event.preventDefault()
     setAuthenticate(true)
+    localStorage.setItem("login","true")
     navigate('/')
     
     
