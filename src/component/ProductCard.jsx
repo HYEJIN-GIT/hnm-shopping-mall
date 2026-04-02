@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
@@ -8,9 +8,6 @@ const ProductCard = ({item}) => {
   const goToPrivate = ()=>{
   navigate(`/product/${item.id}`)
     
-  }
-  const goToFavorite = ()=>{
-
   }
 
   return (
@@ -23,7 +20,7 @@ const ProductCard = ({item}) => {
           <FontAwesomeIcon 
             icon={faHeart} 
             className="heart-icon"
-            onClick={goToFavorite}
+
           />
         </div>
     

@@ -35,11 +35,12 @@ const ProductDetail = () => {
 
       {/* 사이즈 */}
       <div className="size">
-        <span>34</span>
-        <span>36</span>
-        <span>38</span>
-        <span>40</span>
-        <span>42</span>
+       {
+        product?.size.map( item=>
+          <span>{item}</span>
+        )
+       }
+        
       </div>
 
       <div className="size-guide">사이즈 가이드</div>
